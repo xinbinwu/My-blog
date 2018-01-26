@@ -2,9 +2,9 @@ use mysql;
 
 select host, user from user;
 
-create user tale identified by '123456';
+create user blog identified by 'admin';
 
-grant all on tale.* to tale@'%' identified by '123456' with grant option;
+grant all on blog.* to blog@'%' identified by 'admin' with grant option;
 
 flush privileges;
 
